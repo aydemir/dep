@@ -283,7 +283,7 @@ def sirala():
                         pspec_listele.append(a)
 
             elif karsilik_version_isim[i].lstrip("${").rstrip("}") not in version_hepsi.keys():
-                a = "             <Dependency>%s<Dependency>" % piside_nedir[i]
+                a = "             <Dependency>%s</Dependency>" % piside_nedir[i]
                 if a not in pspec_listele:
                     pspec_listele.append(a)
 
@@ -311,7 +311,7 @@ def sirala():
 
 
         elif i not in bulunmayanlar:
-            a = "             <Dependency>%s<Dependency>" % piside_nedir[i]
+            a = "             <Dependency>%s</Dependency>" % piside_nedir[i]
             if a not in pspec_listele:
                 pspec_listele.append(a)
 
